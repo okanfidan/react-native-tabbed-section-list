@@ -1,0 +1,49 @@
+{
+  "name": "@glyw/react-native-tabbed-section-list",
+  "version": "0.0.1",
+  "description": "React Native Tabbed SectionList.",
+  "main": "lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "build": "rm -rf ./lib/* && yarn lint && tsc",
+    "lint": "tslint \"src/**/*.ts?(x)\""
+  },
+  "keywords": [
+    "react-native",
+    "react",
+    "native",
+    "android",
+    "ios",
+    "tabbed sections",
+    "tabbed section list",
+    "scrollview",
+    "flatlist",
+    "sectionlist",
+    "scroll",
+    "tabs"
+  ],
+  "author": "Okan Fidan",
+  "license": "MIT",
+  "homepage": "https://github.com/okanfidan/react-native-tabbed-section-list",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/okanfidan/react-native-tabbed-section-list"
+  },
+  "bugs": {
+    "url": "https://github.com/okanfidan/react-native-tabbed-section-list/issues"
+  },
+  "devDependencies": {
+    "@types/react-native": "^0.69.6",
+    "react": "18.1.0",
+    "react-native": "0.70.4",
+    "tslint": "5.12.0",
+    "tslint-config-airbnb": "5.11.1",
+    "typescript": "^4.8.2",
+    "@types/node": "^18.11.11",
+    "@react-native-community/eslint-config": "0.0.2"
+  },
+  "peerDependencies": {
+    "react": "> 18.0.0",
+    "react-native": "> 0.69.6"
+  }
+}
