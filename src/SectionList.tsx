@@ -64,11 +64,10 @@ export default class SectionList extends React.PureComponent<IProps, IState> {
           {...this.props}
           sections={prepareSections}
           onViewableItemsChanged={({ viewableItems }) => {
-            if (!this.blockUpdateIndex && viewableItems[0]) {
+            if (viewableItems[0]) {
               const currentIndex = viewableItems[0].section.index;
               if (this.state.currentIndex !== currentIndex) {
                 this.setState({ currentIndex });
-                this.blockUpdateIndex = false;
               }
             }
           }}
