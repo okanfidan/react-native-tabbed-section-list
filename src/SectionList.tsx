@@ -68,12 +68,13 @@ export default class SectionList extends React.PureComponent<IProps, IState> {
               const currentIndex = viewableItems[0].section.index;
               if (this.state.currentIndex !== currentIndex) {
                 this.setState({ currentIndex });
+                this.blockUpdateIndex = false;
               }
             }
           }}
           viewabilityConfig={{
             minimumViewTime: 10,
-            itemVisiblePercentThreshold: 2
+            itemVisiblePercentThreshold: 10
           }}
           ref={this.sectionList as React.RefObject<any>}
           onMomentumScrollEnd={() => (this.blockUpdateIndex = false)}
