@@ -68,7 +68,7 @@ export default class SectionList extends React.PureComponent<IProps, IState> {
 
             if (visibleItem?.section.index === this.state.currentIndex && this.blockUpdateIndex) {
               this.blockUpdateIndex = false;
-            } 
+            }
 
             if (!this.blockUpdateIndex && visibleItem) {
               const currentIndex = visibleItem.section.index;
