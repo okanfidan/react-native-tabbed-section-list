@@ -78,7 +78,7 @@ export default class SectionList extends React.PureComponent<IProps, IState> {
             }
           }}
           viewabilityConfig={{
-            minimumViewTime: 10,
+            minimumViewTime: 250,
             itemVisiblePercentThreshold: 10
           }}
           ref={this.sectionList as React.RefObject<any>}
