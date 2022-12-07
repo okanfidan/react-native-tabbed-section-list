@@ -65,7 +65,7 @@ export default class SectionList extends React.PureComponent<IProps, IState> {
           sections={prepareSections}
           onViewableItemsChanged={({ viewableItems }) => {
             const visibleItem = viewableItems.find(item => item.isViewable);
-            if (!this.blockUpdateIndex && visibleItem) {
+            if (visibleItem) {
               const currentIndex = visibleItem.section.index;
               if (this.state.currentIndex !== currentIndex) {
                 this.setState({ currentIndex });
