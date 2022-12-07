@@ -65,7 +65,7 @@ export default class SectionList extends React.PureComponent<IProps, IState> {
           sections={prepareSections}
           onViewableItemsChanged={({ viewableItems }) => {
             const visibleItem = viewableItems.find(item => item.isViewable);
-            if (visibleItem) {
+            if (!this.blockUpdateIndex && visibleItem) {
               const currentIndex = visibleItem.section.index;
               if (this.state.currentIndex !== currentIndex) {
                 this.setState({ currentIndex });
@@ -78,6 +78,7 @@ export default class SectionList extends React.PureComponent<IProps, IState> {
           }}
           ref={this.sectionList as React.RefObject<any>}
           onMomentumScrollEnd={() => (this.blockUpdateIndex = false)}
+          onScrollAnimationEnd={() => (this.blockUpdateIndex = false)}
         />
       </View>
     );
