@@ -64,8 +64,9 @@ export default class SectionList extends React.PureComponent<IProps, IState> {
           {...this.props}
           sections={prepareSections}
           onViewableItemsChanged={({ viewableItems }) => {
-            if (!this.blockUpdateIndex && viewableItems[0]) {
-              const currentIndex = viewableItems[0].section.index;
+            const visibleItem = viewableItems.find(item => item.isViewable);
+            if (!this.blockUpdateIndex && visibleItem) {
+              const currentIndex = visibleItem.section.index;
               if (this.state.currentIndex !== currentIndex) {
                 this.setState({ currentIndex });
               }
@@ -76,7 +77,7 @@ export default class SectionList extends React.PureComponent<IProps, IState> {
             itemVisiblePercentThreshold: 10
           }}
           ref={this.sectionList as React.RefObject<any>}
-          onScrollAnimationEnd={() => (this.blockUpdateIndex = false)}
+          onMomentumScrollEnd={() => (this.blockUpdateIndex = false)}
         />
       </View>
     );
