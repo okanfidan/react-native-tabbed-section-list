@@ -1,5 +1,5 @@
 # @glyw/react-native-tabs-section-list
-[![npm version](https://badge.fury.io/js/@glyw/react-native-tabbed-section-list.svg)](https://github.com/okanfidan/react-native-tabbed-section-list)
+[![npm version](https://badge.fury.io/js/@glyw%2Freact-native-tabbed-section-list.svg)](https://github.com/okanfidan/react-native-tabbed-section-list)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/okanfidan/react-native-tabbed-section-list/blob/master/LICENSE)
 
 React Native Scrollable Tabbed SectionList.
