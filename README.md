@@ -12,13 +12,7 @@ $ yarn add @glyw/react-native-tabbed-section-list
 
 ## Demo
 
-<img src="https://raw.githubusercontent.com/okanfidan/react-native-tabbed-section-list/master/demo.gif" width="360">
-
-## Installation
-
-```bash
-$ yarn add react-native-tabs-section-list
-```
+<img src="https://raw.githubusercontent.com/okanfidan/assets/master/demo.gif" width="360">
 
 ## Props
 
