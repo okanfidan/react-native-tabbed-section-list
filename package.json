@@ -1,6 +1,6 @@
 {
   "name": "@glyw/react-native-tabbed-section-list",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "description": "React Native Tabbed SectionList.",
   "main": "lib/index.js",
   "types": "./lib/index.d.ts",
